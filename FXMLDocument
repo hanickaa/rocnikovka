@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectx.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="642.0" prefWidth="441.0" styleClass="login-card" stylesheets="@design.css">
+         <children>
+            <Label fx:id="visit" layoutX="130.0" layoutY="281.0" styleClass="visit" stylesheets="@design.css" text="VISIT">
+               <font>
+                  <Font name="Book Antiqua Bold" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="441.0" prefHeight="642.0" prefWidth="441.0" styleClass="login-bg" stylesheets="@design.css">
+         <children>
+            <Label layoutX="161.0" layoutY="150.0" text="Login">
+               <font>
+                  <Font name="Book Antiqua Bold" size="43.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="105.0" layoutY="387.0" prefHeight="45.0" prefWidth="227.0" promptText="password" styleClass="textField-design" stylesheets="@design.css" />
+            <TextField fx:id="username" layoutX="105.0" layoutY="321.0" prefHeight="45.0" prefWidth="227.0" promptText="username" styleClass="textField-design" stylesheets="@design.css" />
+            <Button fx:id="login_button" layoutX="173.0" layoutY="469.0" mnemonicParsing="false" onAction="#login" prefHeight="45.0" prefWidth="96.0" styleClass="button-design" stylesheets="@design.css" text="Login" />
+            <Hyperlink fx:id="signUp_hyperlink" layoutX="187.0" layoutY="576.0" styleClass="hypertext-design" stylesheets="@design.css" text="Sign Up">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Hyperlink>
+            <Button layoutX="398.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" stylesheets="@design.css" text="X">
+               <styleClass>
+                  <String fx:value="exit" />
+                  <String fx:value="button-design" />
+               </styleClass>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
